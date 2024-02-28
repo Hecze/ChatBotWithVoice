@@ -1,7 +1,6 @@
 "use client"
 import { useEffect, useRef, useState } from "react";
 
-import axios from 'axios';
 
 export default function Home() {
   const [recording, setRecording] = useState(false);
@@ -11,7 +10,8 @@ export default function Home() {
   const [userInput, setUserInput] = useState('');
   const [botMessage, setBotMessage] = useState('');
   const audioChunksRef = useRef<Blob[]>([]);
-  const apiKey = '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'; //key de openai
+  //obtener apikey de .env
+  const apiKey = process.env.NEXT_PUBLIC_OPENAI_API_KEY;
 
   const systemMessage = {
     role : "assistant",
