@@ -169,7 +169,7 @@ export default function Home() {
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <button onClick={handleToggleRecording} class={recording ? "bg-red-500 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full shadow-xl": "bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full shadow-xl"}>
+      <button onClick={handleToggleRecording} className={recording ? "bg-red-500 hover:bg-red-700 text-white font-bold py-4 px-8 rounded-full shadow-xl": "bg-blue-500 hover:bg-blue-700 text-white font-bold py-4 px-8 rounded-full shadow-xl"}>
         {recording ? 'Stop Recording' : 'Start Recording'}
       </button>
       {audioBlob && (
