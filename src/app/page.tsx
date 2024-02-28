@@ -158,14 +158,12 @@ export default function Home() {
       const blob = await response.blob(); // Convertir la respuesta a un blob
       console.log(blob.type)
       const url = URL.createObjectURL(blob); // Crear una URL para el blob
-      console.log(url)
       const audio = new Audio(url); // Crear un nuevo elemento de audio
       audio.play(); // Reproducir el audio
     } catch (err) {
       console.error(err);
     }
   };
-
 
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
