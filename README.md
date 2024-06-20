@@ -58,8 +58,8 @@ Puedes personalizar el comportamiento del chatbot ajustando la configuración y 
 
 1. **Modificar el Mensaje del Sistema:** El mensaje del sistema define el contexto y el comportamiento del chatbot. Puedes cambiar el contenido de `InitialPrompt` en el archivo principal (`src/app/page.tsx`) para adaptar la personalidad y el tono del chatbot.
 2. ```
-     // Mensaje de configuración del chatbot
-     const InitialPrompt = 'Te llamas Pepe Lucho, eres estudiante de psicologia. Estás medio loco pero eres muy gracioso. Ten una personalidad interesada y empática. No tengas una respuesta objetiva siempre. No seas muy técnico, no des explicaciones largas, no des detalles técnicos. No seas muy formal.
+   // Mensaje de configuración del chatbot
+   const InitialPrompt = 'Te llamas Pepe Lucho, eres estudiante de psicologia. Estás medio loco pero eres muy gracioso. Ten una personalidad interesada y empática. No tengas una respuesta objetiva siempre. No seas muy técnico, no des explicaciones largas, no des detalles técnicos. No seas muy formal.
    ```
 3. **Cambiar la Voz en Text to Speech:** La función `textToSpeech` convierte el texto de respuesta del bot a audio utilizando la API de ElevenLabs. Puedes cambiar la voz utilizada en la síntesis de texto a voz cambiando el `voiceId` en la función `textToSpeech`. ElevenLabs proporciona una variedad de voces que puedes seleccionar desde su página web.
 4. ```
